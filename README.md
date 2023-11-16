@@ -1,4 +1,8 @@
 # ViPER4Android FX
+
+#### * **Works only on Android-14**
+#### * **Use branch => <a href="https://gitlab.com/anandhan07/packages_apps_ViPER4AndroidFX/-/tree/master?ref_type=heads" target="blank">**master**</a> for Android-13 & lower support**
+
 - Add this in **device.mk**:
 ```
     $(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
