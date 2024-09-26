@@ -1,0 +1,28 @@
+cc_prebuilt_library_shared {
+    name: "libv4a_fx",
+    owner: "ViPER4AndroidFX",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: ["vendor/lib/soundfx/libv4a_fx.so"],
+            shared_libs: [ ],
+        },
+    },
+	compile_multilib: "32",
+	prefer: true,
+    check_elf_files: false,
+}
+
+android_app_import {
+    name: "ViPER4AndroidFX",
+    owner: "ViPER4AndroidFX",
+    apk: "system/app/ViPER4AndroidFX/ViPER4AndroidFX.apk",
+    overrides: ["AudioFX"],
+    certificate: "platform",
+    dex_preopt: {
+        enabled: false,
+    },
+    privileged: true,
+}
