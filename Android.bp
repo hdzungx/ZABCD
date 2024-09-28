@@ -10,8 +10,9 @@ cc_prebuilt_library_shared {
             shared_libs: [ ],
         },
     },
-	compile_multilib: "32",
-	prefer: true,
+    compile_multilib: "32",
+    prefer: true,
+    relative_install_path: "soundfx",
     check_elf_files: false,
 }
 
